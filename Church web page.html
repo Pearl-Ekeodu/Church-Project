@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saints Community Church</title>
+    <style>
+      .container {
+        display: block;
+        padding: 15px 60px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        color: #4a2464;
+        margin: 20px 20px;
+        font-size: 35px;
+        font-weight: 700;
+      }
+      h2 {
+        text-align: center;
+        color: #4a2464;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .focus {
+        color: #80003a;
+      }
+      body {
+        background-image: linear-gradient(to top, #f2c4ab 0%, #a0c7fe 74.6%);
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 95%;
+        border-radius: 10px;
+      }
+      p {
+        border: 1px solid #80003a;
+        font-size: 14px;
+        border-radius: 6px;
+        line-height: 1.5;
+        padding: 10px;
+        margin: 20px 0 10px;
+        color: #80003a;
+        display: block;
+        text-align: center;
+      }
+      button {
+        color: white;
+        background-color: #80003a;
+        border-radius: 8px;
+        display: block;
+        border: none;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 20px auto;
+        text-align: center;
+        padding: 15px;
+        box-shadow: 0px 6px 6px 0 rgba(128, 0, 58, 0.6);
+        transition: all 200ms ease-in-out;
+      }
+      .find-us:hover {
+        cursor: pointer;
+        background-color: #4a2464;
+        color: white;
+        box-shadow: 0px 6px 6px 0 rgba(74, 36, 100, 0.6);
+      }
+      .pearl {
+        text-align: center;
+        border: none;
+        padding: 0;
+        font-size: 13px;
+      }
+      .read-more {
+        color: #4a2464;
+        text-decoration: none;
+      }
+      .read-more:hover {
+        color: #80003a;
+      }
+      image {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/601/original/LOGO.png?1718033113"
+          alt="logo"
+          class="image"
+        />
+        <br />
+        Saints Community Church
+      </h1>
+      <h2>
+        Making your life count
+        <span class="focus">
+          through the <em>word</em> and by the <em>spirit</em>!</span
+        >
+      </h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/583/original/Bg-2.jpg?1718024946"
+        alt="Church Worship"
+      />
+      <p>
+        The Saints community church is a church ministry. Our vision is to train
+        believers in the work of the ministry in an atmosphere of love,
+        fellowship, faith and power. We equip believers with the Word to the
+        intent that the same is grounded and able to teach others the same also.
+      </p>
+
+      <a
+        href="https://saintscommunity.net/about-us.html"
+        target="_blank"
+        class="read-more"
+        ><strong>Click here to read more</strong></a
+      >
+
+      <hr />
+      <button class="find-us">Worship with us</button>
+      <br />
+      <p class="pearl">This page was built by Pearl Ekeodu</p>
+    </div>
+    <script>
+      function findUs() {
+        let name = prompt("What is your name?");
+        let city = prompt("What city do you live in?");
+        if (name.length && city.length) {
+          alert(
+            "👋 Hi " +
+              name +
+              ", Welcome to Saints Community Church, click 'OK' to find us in " +
+              city +
+              "."
+          );
+        }
+        if (name.length && city.length) {
+          window.open("https://saintscommunity.net/location.html", "_blank");
+        } else {
+          alert("👎Input invalid, Please try again!");
+        }
+      }
+
+      let locationButton = document.querySelector("button");
+      locationButton.addEventListener("click", findUs);
+    </script>
+  </body>
+</html>
