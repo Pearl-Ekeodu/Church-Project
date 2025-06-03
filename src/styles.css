@@ -1,0 +1,90 @@
+.container {
+    display: block;
+    padding: 15px 60px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #4a2464;
+    margin: 20px 20px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    color: #4a2464;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.focus {
+    color: #80003a;
+}
+
+body {
+    background-image: linear-gradient(to top, #f2c4ab 0%, #a0c7fe 74.6%);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 95%;
+    border-radius: 10px;
+}
+
+p {
+    border: 1px solid #80003a;
+    font-size: 14px;
+    border-radius: 6px;
+    line-height: 1.5;
+    padding: 10px;
+    margin: 20px 0 10px;
+    color: #80003a;
+    display: block;
+    text-align: center;
+}
+
+button {
+    color: white;
+    background-color: #80003a;
+    border-radius: 8px;
+    display: block;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 20px auto;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0px 6px 6px 0 rgba(128, 0, 58, 0.6);
+    transition: all 200ms ease-in-out;
+}
+
+.find-us:hover {
+    cursor: pointer;
+    background-color: #4a2464;
+    color: white;
+    box-shadow: 0px 6px 6px 0 rgba(74, 36, 100, 0.6);
+}
+
+.pearl {
+    text-align: center;
+    border: none;
+    padding: 0;
+    font-size: 13px;
+}
+
+.read-more {
+    color: #4a2464;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    color: #80003a;
+}
+
+image {
+    display: block;
+}
